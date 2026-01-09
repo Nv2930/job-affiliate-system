@@ -1,0 +1,284 @@
+.container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(150px, 13%) 1fr;
+}
+
+/* .child{
+    border: 2px solid blue;
+} */
+#c1 {
+    display: flex;
+    background-color: #f5f6fa;
+    border-right: 2px solid lightgray;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2em;
+    font-weight: bold;
+}
+.sidebar {
+    /* border: 2px solid green; */
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
+}
+
+li {
+    width: 100%;
+    height: 8vh;
+}
+
+.iconURL {
+    /* border: 2px solid red; */
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    gap: 0.5em;
+}
+
+/* Job Form Css */
+.jobContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    /* border: 2px solid black; */
+    /* padding: 2em; */
+}
+
+.jobForm {
+    margin-bottom: 1.2em;
+    background-color: white;
+    /* box-shadow: 1px 1px 5px 1px lightgray; */
+    border-radius: 15px;
+    /* border: 2px solid red; */
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2em 3em;
+    gap: 2.3em;
+    position: relative;
+}
+
+.input_field {
+    width: 100%;
+    height: 3.9vh;
+    font-size: 1.2em;
+    padding: 0.9em;
+}
+
+.label {
+    font-size: 1.1em;
+}
+
+.label::before {
+    content: '*';
+}
+
+.dropdown {
+    min-height: 4.5vh;
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+.textarea {
+    width: 100%;
+    resize: none;
+    height: 15vh;
+    padding: 0.5em;
+    font-size: 1.4em;
+}
+
+.fields_container_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.publishBtn {
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    align-self: flex-end;
+    padding: 0.1em;
+}
+.publishBtn:hover {
+    cursor: pointer;
+}
+.publishBtn:active {
+    scale: 0.8;
+}
+.successContainer{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.successDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.successDivLoad{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobAdminWrapper {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 85vh;
+    background-color: #f5f6fa;
+    padding: 1.2em;
+}
+.jobTblDiv {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    overflow-x: scroll;
+    /* border: 2px solid rebeccapurple; */
+}
+.headingTBL{
+    padding: 1.2em;
+}
+.headingTBL h1{
+    font-size: xx-large;
+}
+.headingTBL p{
+    font-style: italic;
+}
+.jobTblDiv thead{
+    /* position: fixed; */
+    background-color: wheat;
+}
+.jobAdminTable{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.jobAdminTable th{
+    border: 1px solid black;
+    padding: 1.2em;
+}
+.jobAdminTable td{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.dltBtn{
+    padding: 0.2em;
+    font-size: 1em;
+    background-color: white;
+    color: blueviolet;
+    border: none;
+}
+.dltBtn:hover{
+    cursor: pointer;
+}
+.dltBtn:active{
+    scale: 0.9;
+}
+.emptyJobArr{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emptyJobArr img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width:700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #c1{
+        width: 100%;
+        min-height: 13vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .sidebar{
+        width: 50%;
+        min-height: 0;
+        flex-direction: row;
+    }
+    .sidebar ul{
+        display: flex;
+    }
+    li{
+        height: 6vh;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+    .iconURL{
+        font-size: 1em;
+    }
+    .icons{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .jobAdminWrapper{
+        padding: 1em;
+    }
+}
+
+/* 
+
+
+.jobAdminWrapper {
+    border: 2px solid red;
+    width: 100%;
+    height: 85vh;
+    background-color: #f5f6fa;
+    padding: 1.2em;
+}
+.jobTblDiv {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    overflow-x: scroll;
+    border: 2px solid rebeccapurple;
+}*/
